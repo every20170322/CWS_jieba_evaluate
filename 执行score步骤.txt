@@ -1,0 +1,9 @@
+1.执行score脚本，对分词结果进行评测
+在linux命令行下输入下方的一行命令即可:
+perl score corpus_gold/pku_training_words.utf8 corpus_gold/pku_test_gold.utf8 corpus_seg/pku_seg.utf8 > evaluate_score/pku_score.utf8
+
+注：
+   1° score脚本由perl语言所写；
+   2° 将Linux命令行的目录切换到score的父目录；
+   3° 命令解释：perl score 训练词表 黄金分割 jieba分词后的语料 > 得分文件
+   4° 此处运行的操作系统为ubuntu，本身自带perl环境及其perl所依赖的环境，所以如果将其在Windows系统中运行，需要自己手动地配置环境。
